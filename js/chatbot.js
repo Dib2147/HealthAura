@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const toggleButton = document.createElement('div');
     toggleButton.classList.add('floating-button', 'chatbot-button');
-    toggleButton.innerHTML = `<img src="assets/icons/logo.png" alt="Chat">`; // Path to your chatbot icon
+    toggleButton.innerHTML = `<img src="assets/icons/chatbot.png" alt="Chat">`; // Path to your chatbot icon
 
     toggleButton.addEventListener('click', () => {
         chatbotContainer.style.display =
