@@ -188,7 +188,7 @@ footer .social-links a:hover {
 
 /* WhatsApp Button */
 .whatsapp-button {
-    bottom: 80px;
+    bottom: 600px;
 }
 
 .whatsapp-button:hover {
@@ -197,8 +197,9 @@ footer .social-links a:hover {
 
 /* Chatbot Button */
 .chatbot-button {
-    bottom: 20px;
+    bottom: 10px;
     background: #00796b;
+    display: none;
 }
 
 .chatbot-button:hover {
