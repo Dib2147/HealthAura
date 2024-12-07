@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00796b;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e0f7fa;
+    color: #00796b;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00796b;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.hero .btn:hover {
+    background: #004d40;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+.services ul,
+.products .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.services ul li,
+.products .product-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.33% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.services ul li:hover,
+.products .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form label {
+    font-weight: bold;
+}
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+form button {
+    padding: 10px;
+    background: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+form button:hover {
+    background: #004d40;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #00796b;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 5px 0;
+}
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Floating Buttons */
+.floating-button {
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.floating-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    bottom: 80px;
+}
+
+.whatsapp-button:hover {
+    background: #1ebea5;
+}
+
+/* Chatbot Button */
+.chatbot-button {
+    bottom: 20px;
+    background: #00796b;
+}
+
+.chatbot-button:hover {
+    background: #004d40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services ul li,
+    .products .product-card {
+        width: calc(50% - 40px);
+    }
+}
+@media (max-width: 480px) {
+    .services ul li,
+    .products .product-card {
+        width: calc(100% - 40px);
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
